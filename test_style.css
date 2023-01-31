@@ -1,0 +1,13 @@
+
+.text{
+    padding: 15px;
+    outline: red solid 2px;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+
+.text:nth-last-child(-n + 3){
+
+    background-color: blueviolet;
+}
