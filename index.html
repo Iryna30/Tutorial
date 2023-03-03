@@ -12,75 +12,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./test_style.css" />
+    <link rel="stylesheet" href="test_style.css" />
   </head>
   <body>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-      blanditiis provident id eligendi autem. Veniam fuga in sit delectus atque
-      repudiandae perferendis maxime, amet aspernatur vel corrupti! Quibusdam,
-      impedit a!
-    </p>
-    <p class="text">
-      Eaque inventore quidem excepturi quo, itaque labore in voluptates ad eos
-      delectus, corrupti, rerum a voluptas accusantium harum quasi nostrum
-      fugiat voluptatibus! Quo corrupti unde sunt non excepturi. Vel, iste!
-    </p>
-    <p class="text">
-      Exercitationem quaerat eveniet dolorum maxime sunt facere amet repellat,
-      accusantium deleniti corporis totam ratione, numquam voluptatum magnam
-      perspiciatis quo quas veritatis. Voluptate, alias saepe esse maxime
-      maiores ullam harum similique!
-    </p>
-    <p class="text">
-      A, culpa aut, beatae temporibus atque rerum minus incidunt esse eos
-      repellendus sed amet sit nemo maxime quo illo nostrum est neque aperiam?
-      Repudiandae, animi impedit voluptate laboriosam optio voluptatem.
-    </p>
-    <p class="text">
-      Quisquam nesciunt ex nulla perspiciatis amet hic facilis enim dolores
-      expedita architecto ad soluta culpa dolor veniam officiis quaerat quam
-      quos, fugit labore, quod sapiente. Illum beatae velit nisi cum?
-    </p>
-    <p class="text">
-      Fugiat quas quam voluptatum, ex laborum, ducimus voluptatem ipsum quasi
-      vero dolorem deserunt tenetur nihil ullam dignissimos facilis deleniti
-      omnis ipsam magnam, reiciendis odit excepturi tempore optio consequuntur!
-      Distinctio, ex.
-    </p>
-    <p class="text">
-      Facilis voluptatibus debitis officiis porro amet nostrum eos repellendus
-      aliquam necessitatibus sunt laborum deserunt eligendi soluta in vel
-      laboriosam nihil asperiores quidem consequuntur, placeat rerum ea dolore
-      provident. Incidunt, facilis!
-    </p>
-    <p class="text">
-      Error perspiciatis, sequi magnam veniam excepturi exercitationem corporis
-      libero sint odio? Facilis veritatis culpa assumenda minima voluptate ipsum
-      animi, eveniet quas quasi fuga repudiandae voluptatum harum nam illum
-      quidem exercitationem?
-    </p>
-    <p class="text">
-      Commodi perferendis dicta quo doloribus a at officiis minima hic,
-      asperiores distinctio nisi ex omnis, illum deleniti porro dolore earum
-      eligendi possimus! Incidunt modi, dicta a voluptatibus numquam aliquid
-      dolor?
-    </p>
-    <p class="text">
-      Repellat dolorem praesentium error sapiente numquam, quod laudantium
-      possimus unde quas architecto quisquam quaerat deleniti eligendi voluptas
-      itaque recusandae quos aspernatur rerum accusantium adipisci repudiandae.
-      Alias fugiat cupiditate neque rem?
-    </p>
-    <p class="text">
-      Hic beatae atque dicta nesciunt quidem nulla dolorem error quia adipisci
-      perspiciatis odio cum veniam et sed, dolorum incidunt vel repudiandae
-      ipsam a aliquid minus sint quisquam nobis alias. Sed.
-    </p>
-    <p class="text">
-      Eum quibusdam dolor vero temporibus, doloribus maxime esse ducimus hic
-      eius quod eaque, laboriosam id quae facere soluta quasi? Est alias neque
-      similique laborum optio harum nulla a in aut!
-    </p>
+    <button class="btn" type="button">
+      Test button
+      <svg class="icon icon-fire" width="30" height="30">
+        <use href="./symbol-defs.svg#icon-fire"></use>
+      </svg>
+      <svg class="icon icon-rocket" width="30" height="30">
+        <use href="./symbol-defs.svg#icon-rocket"></use>
+      </svg>
+    </button>
+    <div class="form1">
+      <div class="form"></div>
+    </div>
+
+    <div class="scene">
+      <div class="card">
+        <div class="card__face card__face--front">front</div>
+        <div class="card__face card__face--back">back</div>
+      </div>
+
+      
+    </div>
+    <img
+        src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+        alt="Sun"
+        width="300"
+        height="300"
+      />
+    <script>
+      var card = document.querySelector(".card");
+      card.addEventListener("click", function () {
+        card.classList.toggle("is-flipped");
+      });
+    </script>
   </body>
 </html>
