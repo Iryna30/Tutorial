@@ -130,7 +130,7 @@ body{
 
 img {
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: 50px;
   animation-name: spin;
   animation-duration: 5s;
@@ -146,4 +146,14 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+h1{
+  display: block;
+ text-align: center;
+
+ 
+  
+
+  
 }
